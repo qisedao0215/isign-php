@@ -19,14 +19,14 @@ class HttpTest extends \PHPUnit_Framework_TestCase
 
     public function testGet()
     {
-        $httpCore = new RequestCore("http://www.371.li");
+        $httpCore = new RequestCore("http://supersign.makemeng.com");
         $httpResponse = $httpCore->send_request();
         $this->assertNotNull($httpResponse);
     }
 
     public function testSetProxyAndTimeout()
     {
-        $httpCore = new RequestCore("http://www.371.li");
+        $httpCore = new RequestCore("http://supersign.makemeng.com");
         $httpCore->set_proxy("1.0.2.1:8888");
         $httpCore->connect_timeout = 1;
         try {
@@ -39,7 +39,7 @@ class HttpTest extends \PHPUnit_Framework_TestCase
 
     public function testGetParseTrue()
     {
-        $httpCore = new RequestCore("http://www.371.li");
+        $httpCore = new RequestCore("http://supersign.makemeng.com");
         $httpCore->curlopts = array(CURLOPT_HEADER => true);
         $url = $httpCore->send_request(true);
         foreach ($httpCore->get_response_header() as $key => $value) {
@@ -50,7 +50,7 @@ class HttpTest extends \PHPUnit_Framework_TestCase
 
     public function testParseResponse()
     {
-        $httpCore = new RequestCore("http://www.371.li");
+        $httpCore = new RequestCore("http://supersign.makemeng.com");
         $response = $httpCore->send_request();
         $parsed = $httpCore->process_response(null, $response);
         $this->assertNotNull($parsed);

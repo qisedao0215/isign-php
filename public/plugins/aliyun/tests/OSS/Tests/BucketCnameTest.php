@@ -31,7 +31,7 @@ class BucketCnameTest extends \PHPUnit_Framework_TestCase
 
     public function testAddCname()
     {
-        $this->client->addBucketCname($this->bucketName, 'www.371.li');
+        $this->client->addBucketCname($this->bucketName, 'supersign.makemeng.com');
         $this->client->addBucketCname($this->bucketName, 'www.qq.com');
 
         $ret = $this->client->getBucketCname($this->bucketName);
@@ -49,7 +49,7 @@ class BucketCnameTest extends \PHPUnit_Framework_TestCase
             $cnameList[] = $c['Domain'];
         }
         $should = array(
-            'www.371.li',
+            'supersign.makemeng.com',
             'www.qq.com',
             'www.sina.com.cn',
             'www.iqiyi.com'
@@ -60,14 +60,14 @@ class BucketCnameTest extends \PHPUnit_Framework_TestCase
 
     public function testDeleteCname()
     {
-        $this->client->addBucketCname($this->bucketName, 'www.371.li');
+        $this->client->addBucketCname($this->bucketName, 'supersign.makemeng.com');
         $this->client->addBucketCname($this->bucketName, 'www.qq.com');
 
         $ret = $this->client->getBucketCname($this->bucketName);
         $this->assertEquals(2, count($ret->getCnames()));
 
         // delete one cname
-        $this->client->deleteBucketCname($this->bucketName, 'www.371.li');
+        $this->client->deleteBucketCname($this->bucketName, 'supersign.makemeng.com');
 
         $ret = $this->client->getBucketCname($this->bucketName);
         $this->assertEquals(1, count($ret->getCnames()));

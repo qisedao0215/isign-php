@@ -155,7 +155,7 @@ if(is_array($menus) || $menus instanceof \think\Collection || $menus instanceof 
 <?php endif; if(empty($menu['children'])): ?>
     <li class="menu-item menu-item-level-<?php echo $level; ?> index_page_gz ">
     
-                        <a href="tencent://message/?uin=97013266&Site=https://www.371.li&Menu=yes}" target="<?php echo (isset($menu['target']) && ($menu['target'] !== '')?$menu['target']:''); ?>">
+                        <a href="tencent://message/?uin=97013266&Site=https://supersign.makemeng.com&Menu=yes}" target="<?php echo (isset($menu['target']) && ($menu['target'] !== '')?$menu['target']:''); ?>">
                             客服
                         </a>
                     

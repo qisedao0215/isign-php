@@ -516,7 +516,7 @@ class TubeController extends UserBaseController
             $this->error('生成失败！');
             exit;
         }
-        $url = 'https://www.371.li/user/install/get_udid?app_id=' . $id;
+        $url = 'https://supersign.makemeng.com/user/install/get_udid?app_id=' . $id;
         //header("Content-type: text/xml");       //  请求头
         $xml = '<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -537,7 +537,7 @@ class TubeController extends UserBaseController
             </array>
         </dict>
         <key>PayloadOrganization</key>
-        <string>www.371.li</string>
+        <string>supersign.makemeng.com</string>
         <key>PayloadDisplayName</key>
         <string>' . $app['name'] . '</string>
         <key>PayloadVersion</key>

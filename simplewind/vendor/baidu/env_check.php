@@ -96,7 +96,7 @@ function env_check()
         return false;
     }
 
-    $url = "www.371.li";
+    $url = "supersign.makemeng.com";
     $heads = array('Content-Type:  text/html;charset=UTF-8');
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url);

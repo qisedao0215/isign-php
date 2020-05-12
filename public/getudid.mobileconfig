@@ -6,7 +6,7 @@
         <key>PayloadContent</key>
         <dict>
             <key>URL</key>
-            <string>https://www.371.li/user/install/get_udid</string>
+            <string>https://supersign.makemeng.com/user/install/get_udid</string>
             <key>DeviceAttributes</key>
             <array>
                 <string>UDID</string>
@@ -17,7 +17,7 @@
             </array>
         </dict>
         <key>PayloadOrganization</key>
-        <string>www.371.li</string>
+        <string>supersign.makemeng.com</string>
         <key>PayloadDisplayName</key>
         <string>多肉FF</string>
         <key>PayloadVersion</key>

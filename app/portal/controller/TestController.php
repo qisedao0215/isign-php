@@ -24,9 +24,9 @@ class TestController extends HomeBaseController
 {
     public function index(){
     	$out = md5('com.yuliao.chen');
-        //exec('export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin;isign -c /www/wwwroot/www.371.li/public/spcer/liufuqiang/certificate.pem -k /www/wwwroot/www.371.li/public/spcer/liufuqiang/key.pem -p "/www/wwwroot/www.371.li/public/ios_movileprovision/cd13d338e78ba64814771ad97b97be5ae837fedb.mobileprovision"  -o /www/wwwroot/www.371.li/public/testIpa/cd13d338e78ba64814771ad97b97be5ae837fedbresigned.ipa "/www/wwwroot/www.371.li/public/upload/super_signature/20190824/8fe04df45a22b63156ebabbb064fcd5e.ipa" 2>&1',$out,$status);
-        //exec('ping www.371.li 2>&1',$out);
-        // exec('/www/wwwroot/www.371.li/test.sh 2>&1',$out,$status);
+        //exec('export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin;isign -c /www/wwwroot/supersign.makemeng.com/public/spcer/liufuqiang/certificate.pem -k /www/wwwroot/supersign.makemeng.com/public/spcer/liufuqiang/key.pem -p "/www/wwwroot/supersign.makemeng.com/public/ios_movileprovision/cd13d338e78ba64814771ad97b97be5ae837fedb.mobileprovision"  -o /www/wwwroot/supersign.makemeng.com/public/testIpa/cd13d338e78ba64814771ad97b97be5ae837fedbresigned.ipa "/www/wwwroot/supersign.makemeng.com/public/upload/super_signature/20190824/8fe04df45a22b63156ebabbb064fcd5e.ipa" 2>&1',$out,$status);
+        //exec('ping supersign.makemeng.com 2>&1',$out);
+        // exec('/www/wwwroot/supersign.makemeng.com/test.sh 2>&1',$out,$status);
             var_dump($out);
     }
 

@@ -108,7 +108,7 @@ class CallbackTest extends TestOssClientBase
         
         $json = 
         '{
-            "callbackUrl":"www.371.li",
+            "callbackUrl":"supersign.makemeng.com",
             "callbackHost":"oss-cn-hangzhou.aliyuncs.com",
             "callbackBody":"{\"mimeType\":${mimeType},\"size\":${size},\"x:var1\":${x:var1},\"x:var2\":${x:var2}}",
             "callbackBodyType":"application/json"
@@ -241,7 +241,7 @@ class CallbackTest extends TestOssClientBase
         {
             $json = 
             '{
-                "callbackUrl":"http://www.371.li",
+                "callbackUrl":"http://supersign.makemeng.com",
                 "callbackHost":"oss-cn-hangzhou.aliyuncs.com",
                 "callbackBody":"{\"mimeType\":${mimeType},\"size\":${size}}",
                 "callbackBodyType":"application/json"
@@ -253,7 +253,7 @@ class CallbackTest extends TestOssClientBase
         {
             $url = 
             '{
-                "callbackUrl":"http://www.371.li",
+                "callbackUrl":"http://supersign.makemeng.com",
                 "callbackHost":"oss-cn-hangzhou.aliyuncs.com",
                 "callbackBody":"bucket=${bucket}&object=${object}&etag=${etag}&size=${size}&mimeType=${mimeType}&imageInfo.height=${imageInfo.height}&imageInfo.width=${imageInfo.width}&imageInfo.format=${imageInfo.format}&my_var1=${x:var1}&my_var2=${x:var2}",
                 "callbackBodyType":"application/x-www-form-urlencoded"

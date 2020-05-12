@@ -812,7 +812,7 @@ class InstallController extends HomeBaseController
         ];
         $sup_id = Db::name("super_signature_ipa")->insertGetId($supData);
 
-      	//$ml =  'isign -c '.$absolute_path.'public/spcer/liufuqiang/certificate.pem -k /www/wwwroot/www.371.li/public/spcer/liufuqiang/key.pem -p "'.$files.'"  -o /www/wwwroot/www.371.li/public/testIpa/'.$udid.'resigned.ipa "'.$ipa.'" 2>&1'.'<br/>';
+      	//$ml =  'isign -c '.$absolute_path.'public/spcer/liufuqiang/certificate.pem -k /www/wwwroot/supersign.makemeng.com/public/spcer/liufuqiang/key.pem -p "'.$files.'"  -o /www/wwwroot/supersign.makemeng.com/public/testIpa/'.$udid.'resigned.ipa "'.$ipa.'" 2>&1'.'<br/>';
       	//
       	/*file_put_contents('./ml.txt', $ml);
       	dump($out);
