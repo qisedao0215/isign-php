@@ -56,7 +56,7 @@ function get_config()
 
 //获取站点地址
 function get_site_url(){
-    return 'https://app.fvlrung.com';
+    return 'https://supersign.makemeng.com';
 }
 
 function make_password($length = 8)

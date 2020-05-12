@@ -11,7 +11,7 @@ return [
     // 数据库名
     'database' => 'isign-php',
     // 用户名
-    'username' => 'root',
+    'username' => 'isign-php',
     // 密码
     'password' => '123456',
     // 端口

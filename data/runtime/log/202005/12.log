@@ -1,0 +1,1171 @@
+---------------------------------------------------------------
+[ 2020-05-12T10:26:58+08:00 ] 172.17.38.233 172.69.33.59 GET /
+[ info ] supersign.makemeng.com/ [运行时间：0.280483s][吞吐率：3.57req/s] [内存消耗：3,523.43kb] [文件加载：76]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.133273s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '47.101.202.31',
+  'cf-request-id' => '02a84dfa6d000077529a1f9200000001',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'cf-ray' => '5920b2a3ee3d7752-LAX',
+  'x-forwarded-for' => '47.101.202.31',
+  'cf-ipcountry' => 'CN',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.014315s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.001429s ]
+[ info ] [ RUN ] app\portal\controller\IndexController->index[ /www/wwwroot/supersign.makemeng.com/app/portal/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/97013266/portal/index.html [ array (
+  0 => 'site_info',
+  1 => 'theme_vars',
+  2 => 'theme_widgets',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.047709s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.051076s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.013160s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme_file` [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'portal/article' LIMIT 1 [ RunTime:0.004292s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='portal/Article/index',`file`='portal/article',`name`='文章页',`more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"name\":\"hot_articles_category_id\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"name\":\"hot_articles_category_id\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='文章页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = '97013266'  AND `file` = 'portal/article' [ RunTime:0.003771s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'portal/contact' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='portal/Page/index',`file`='portal/contact',`name`='联系我们页',`more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`description`='联系我们页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = '97013266'  AND `file` = 'portal/contact' [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'portal/index' LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='portal/Index/index',`file`='portal/index',`name`='首页',`more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\",\"rule\":{\"require\":true}}}}',`description`='首页模板文件',`is_public`=0,`list_order`=5  WHERE  `theme` = '97013266'  AND `file` = 'portal/index' [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'portal/list' LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='portal/List/index',`file`='portal/list',`name`='文章列表页',`more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='文章列表模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = '97013266'  AND `file` = 'portal/list' [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'portal/page' LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='portal/Page/index',`file`='portal/page',`name`='单页面',`more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='单页面模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = '97013266'  AND `file` = 'portal/page' [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'portal/search' LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='portal/search/index',`file`='portal/search',`name`='搜索页面',`more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`description`='搜索模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = '97013266'  AND `file` = 'portal/search' [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'public/config' LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='public/Config',`file`='public/config',`name`='模板全局配置',`more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`config_more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`description`='模板全局配置文件',`is_public`=1,`list_order`=0  WHERE  `theme` = '97013266'  AND `file` = 'public/config' [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'public/nav' LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='public/Nav',`file`='public/nav',`name`='导航条',`more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='导航条模板文件',`is_public`=1,`list_order`=1  WHERE  `theme` = '97013266'  AND `file` = 'public/nav' [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266' [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme`  SET `name`='simpleboot3',`version`='1.0.2',`demo_url`='http://demo.thinkcmf.com',`author`='ThinkCMF',`lang`='zh-cn',`author_url`='http://www.thinkcmf.com',`keywords`='ThinkCMF模板',`description`='ThinkCMF默认模板'  WHERE  `theme` = '97013266' [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT `more` FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND (  `is_public` = 1 OR `file` = 'portal/index' ) [ RunTime:0.000183s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:10:18+08:00 ] 172.17.38.233 172.68.255.10 GET /
+[ info ] supersign.makemeng.com/ [运行时间：0.041941s][吞吐率：23.84req/s] [内存消耗：3,526.67kb] [文件加载：76]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.006843s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a8759f710000192e8f903200000001',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'cf-ray' => '5920f2124a5b192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000255s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000146s ]
+[ info ] [ RUN ] app\portal\controller\IndexController->index[ /www/wwwroot/supersign.makemeng.com/app/portal/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/97013266/portal/index.html [ array (
+  0 => 'site_info',
+  1 => 'theme_vars',
+  2 => 'theme_widgets',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000469s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme_file` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'portal/article' LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='portal/Article/index',`file`='portal/article',`name`='文章页',`more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"name\":\"hot_articles_category_id\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"name\":\"hot_articles_category_id\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='文章页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = '97013266'  AND `file` = 'portal/article' [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'portal/contact' LIMIT 1 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='portal/Page/index',`file`='portal/contact',`name`='联系我们页',`more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`description`='联系我们页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = '97013266'  AND `file` = 'portal/contact' [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'portal/index' LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='portal/Index/index',`file`='portal/index',`name`='首页',`more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\",\"rule\":{\"require\":true}}}}',`description`='首页模板文件',`is_public`=0,`list_order`=5  WHERE  `theme` = '97013266'  AND `file` = 'portal/index' [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'portal/list' LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='portal/List/index',`file`='portal/list',`name`='文章列表页',`more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='文章列表模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = '97013266'  AND `file` = 'portal/list' [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'portal/page' LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='portal/Page/index',`file`='portal/page',`name`='单页面',`more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='单页面模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = '97013266'  AND `file` = 'portal/page' [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'portal/search' LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='portal/search/index',`file`='portal/search',`name`='搜索页面',`more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`description`='搜索模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = '97013266'  AND `file` = 'portal/search' [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'public/config' LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='public/Config',`file`='public/config',`name`='模板全局配置',`more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`config_more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`description`='模板全局配置文件',`is_public`=1,`list_order`=0  WHERE  `theme` = '97013266'  AND `file` = 'public/config' [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND `file` = 'public/nav' LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='97013266',`action`='public/Nav',`file`='public/nav',`name`='导航条',`more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='导航条模板文件',`is_public`=1,`list_order`=1  WHERE  `theme` = '97013266'  AND `file` = 'public/nav' [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = '97013266' [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme`  SET `name`='simpleboot3',`version`='1.0.2',`demo_url`='http://demo.thinkcmf.com',`author`='ThinkCMF',`lang`='zh-cn',`author_url`='http://www.thinkcmf.com',`keywords`='ThinkCMF模板',`description`='ThinkCMF默认模板'  WHERE  `theme` = '97013266' [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT `more` FROM `cmf_theme_file` WHERE  `theme` = '97013266'  AND (  `is_public` = 1 OR `file` = 'portal/index' ) [ RunTime:0.000272s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:10:24+08:00 ] 172.17.38.233 172.68.255.10 GET /themes/97013266/public/static/%E8%B6%85%E7%BA%A7%E7%AD%BE%E5%90%8D%E6%90%AD%E5%BB%BAQQ208620005.mp3
+[ info ] supersign.makemeng.com/themes/97013266/public/static/%E8%B6%85%E7%BA%A7%E7%AD%BE%E5%90%8D%E6%90%AD%E5%BB%BAQQ208620005.mp3 [运行时间：0.024978s][吞吐率：40.04req/s] [内存消耗：2,364.80kb] [文件加载：55]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.006701s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'themes',
+    1 => '97013266',
+    2 => 'public',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a875c25d0000192e8f930200000001',
+  'cookie' => '__cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi',
+  'range' => 'bytes=0-',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'referer' => 'https://supersign.makemeng.com/',
+  'sec-fetch-dest' => 'audio',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'cf-ray' => '5920f24a2c79192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'static' => '超级签名搭建QQ208620005.mp3',
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000311s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000424s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:10:53+08:00 ] 172.17.38.233 172.68.255.10 GET /admin
+[ info ] supersign.makemeng.com/admin [运行时间：0.034479s][吞吐率：29.00req/s] [内存消耗：2,699.87kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.007229s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a87634920000192e8f8ba200000001',
+  'cookie' => '__cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi; thinkphp_show_page_trace=0|0; cf_ob_info=522:5920f229db7a192e:HKG; cf_use_ob=443',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'cf-ray' => '5920f300edd3192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000271s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004801s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000417s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000422s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:10:54+08:00 ] 172.17.38.233 172.68.255.10 GET /admin/public/login.html
+[ info ] supersign.makemeng.com/admin/public/login.html [运行时间：0.030852s][吞吐率：32.41req/s] [内存消耗：2,977.63kb] [文件加载：70]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.007459s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a87635ab0000192e8f8cb200000001',
+  'cookie' => '__cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi; thinkphp_show_page_trace=0|0; cf_ob_info=522:5920f229db7a192e:HKG; cf_use_ob=443',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'cf-ray' => '5920f302ab81192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000314s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\PublicController->login[ /www/wwwroot/supersign.makemeng.com/app/admin/controller/PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000429s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000322s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:10:55+08:00 ] 172.17.38.233 172.68.255.10 GET /captcha/new.html?height=32&width=150&font_size=18
+[ info ] supersign.makemeng.com/captcha/new.html?height=32&width=150&font_size=18 [运行时间：0.049291s][吞吐率：20.29req/s] [内存消耗：2,342.59kb] [文件加载：52]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.011813s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a8763d0c0000192e8f997200000001',
+  'cookie' => '__cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi; thinkphp_show_page_trace=0|0; cf_ob_info=522:5920f229db7a192e:HKG; cf_use_ob=443',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'referer' => 'https://supersign.makemeng.com/admin/public/login.html',
+  'sec-fetch-dest' => 'image',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'cf-ray' => '5920f30e789a192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000420s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ /www/wwwroot/supersign.makemeng.com/simplewind/cmf/controller/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000655s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.001187s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000439s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:11:11+08:00 ] 172.17.38.233 172.68.255.10 POST /admin/public/dologin.html
+[ info ] supersign.makemeng.com/admin/public/dologin.html [运行时间：0.029947s][吞吐率：33.39req/s] [内存消耗：2,794.73kb] [文件加载：66]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.007165s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a8767a290000192e8fbcf200000001',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'referer' => 'https://supersign.makemeng.com/admin/public/login.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://supersign.makemeng.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'content-length' => '75',
+  'cf-ray' => '5920f3704f7e192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'majhe',
+  'password' => 'f9*ks*uiOu1&amp;ktTTcG!X#sQw',
+  'captcha' => 'kd4d',
+  'redirect' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000261s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\PublicController->doLogin[ /www/wwwroot/supersign.makemeng.com/app/admin/controller/PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000457s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.003393s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `user_login` = 'majhe' LIMIT 1 [ RunTime:0.000363s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:11:27+08:00 ] 172.17.38.233 162.158.179.96 GET /captcha/new.html?height=32&width=150&font_size=18&refresh=0.3739930164454788
+[ info ] supersign.makemeng.com/captcha/new.html?height=32&width=150&font_size=18&refresh=0.3739930164454788 [运行时间：0.024576s][吞吐率：40.69req/s] [内存消耗：2,342.65kb] [文件加载：52]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.008127s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a8767b510000192e8fbe8200000001',
+  'cookie' => '__cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'referer' => 'https://supersign.makemeng.com/admin/public/login.html',
+  'sec-fetch-dest' => 'image',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'cf-ray' => '5920f3721d46192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+  'refresh' => '0.3739930164454788',
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000235s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ /www/wwwroot/supersign.makemeng.com/simplewind/cmf/controller/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000381s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.002087s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000394s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:11:28+08:00 ] 172.17.38.233 162.158.178.161 GET /favicon.ico
+[ info ] supersign.makemeng.com/favicon.ico [运行时间：0.020571s][吞吐率：48.61req/s] [内存消耗：2,363.86kb] [文件加载：55]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.006789s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a876b8d80000192e8fa01200000001',
+  'cookie' => '__cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi; thinkphp_show_page_trace=0|0; cf_ob_info=522:5920f348bf51192e:HKG; cf_use_ob=443',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'referer' => 'https://supersign.makemeng.com/admin/public/login.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'cf-ray' => '5920f3d48f17192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000229s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000378s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000371s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:11:39+08:00 ] 172.17.38.233 172.68.255.10 POST /admin/public/dologin.html
+[ info ] supersign.makemeng.com/admin/public/dologin.html [运行时间：0.023405s][吞吐率：42.73req/s] [内存消耗：2,765.77kb] [文件加载：66]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.007784s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a876db2f0000192e8f996200000001',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi; thinkphp_show_page_trace=0|0; cf_ob_info=522:5920f348bf51192e:HKG; cf_use_ob=443',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'referer' => 'https://supersign.makemeng.com/admin/public/login.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://supersign.makemeng.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'content-length' => '58',
+  'cf-ray' => '5920f40b7990192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'aa123456@',
+  'captcha' => 'madc',
+  'redirect' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000234s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\PublicController->doLogin[ /www/wwwroot/supersign.makemeng.com/app/admin/controller/PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000391s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.001980s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000368s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:11:39+08:00 ] 172.17.38.233 172.68.255.10 GET /captcha/new.html?height=32&width=150&font_size=18&refresh=0.3739930164454788&refresh=0.4663261383101769
+[ info ] supersign.makemeng.com/captcha/new.html?height=32&width=150&font_size=18&refresh=0.3739930164454788&refresh=0.4663261383101769 [运行时间：0.023366s][吞吐率：42.80req/s] [内存消耗：2,343.12kb] [文件加载：52]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.007350s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a876e92b0000192e8fabf200000001',
+  'cookie' => '__cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi; thinkphp_show_page_trace=0|0; cf_ob_info=522:5920f348bf51192e:HKG; cf_use_ob=443',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'referer' => 'https://supersign.makemeng.com/admin/public/login.html',
+  'sec-fetch-dest' => 'image',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'cf-ray' => '5920f421da40192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+  'refresh' => '0.4663261383101769',
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000277s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ /www/wwwroot/supersign.makemeng.com/simplewind/cmf/controller/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000389s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.000959s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:11:46+08:00 ] 172.17.38.233 172.68.255.10 POST /admin/public/dologin.html
+[ info ] supersign.makemeng.com/admin/public/dologin.html [运行时间：0.045863s][吞吐率：21.80req/s] [内存消耗：2,847.30kb] [文件加载：68]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.006839s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a87702fd0000192e8f8e8200000001',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi; thinkphp_show_page_trace=0|0; cf_ob_info=522:5920f348bf51192e:HKG; cf_use_ob=443',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'referer' => 'https://supersign.makemeng.com/admin/public/login.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://supersign.makemeng.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'content-length' => '58',
+  'cf-ray' => '5920f44b2cce192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'aa123456@',
+  'captcha' => 'jtah',
+  'redirect' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000239s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\PublicController->doLogin[ /www/wwwroot/supersign.makemeng.com/app/admin/controller/PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000362s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `b` ON `a`.`role_id`=`b`.`id` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `user_id` = 1  AND `device_type` = 'web' LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] UPDATE `cmf_user_token`  SET `token`='295da092d65774b42e5ffb0b4bed9aa6e94b6cfd2d0d0c4586fb03ba2ae79e18',`expire_time`=1604805106,`create_time`=1589253106  WHERE  `user_id` = 1  AND `device_type` = 'web' [ RunTime:0.008867s ]
+[ sql ] [ SQL ] UPDATE `cmf_user`  SET `user_type`=1,`sex`=0,`birthday`=-28800,`last_login_time`=1589253106,`score`=0,`coin`=0,`create_time`=1513673890,`user_status`=1,`user_login`='admin',`user_pass`='###4b310badc38654b70d9da5ff0d77a4e5',`user_nickname`='admin',`user_email`='123456@qq.com',`user_url`='https://app.fvlrung.com',`avatar`='http://api2.meidulm.com/default/20191012/053ad1cd982ad2d33cf4df6ba7ef1a29.jpg',`signature`='奇偶猫 www.xydai.cn\r\n',`last_login_ip`='103.113.62.40',`user_activation_key`='',`mobile`='',`more`=NULL,`accessKey`='H-ZQeU6VnHvhNNrrsBcc7L3_fkZJjZTiRE8njXzg',`secretKey`='84f28-hG5IzFiE3Hge1Bk7EjUIUZI8xE-4Macpe4',`bucket`='clientapp',`valid_time`=1,`domain`='p6fwhxlcm.bkt.clouddn.com',`downloads`='88888',`sup_down_prive`='0',`sup_down_public`='0'  WHERE  `id` = 1 [ RunTime:0.006831s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:11:50+08:00 ] 172.17.38.233 172.68.255.10 GET /admin/index/index.html
+[ info ] supersign.makemeng.com/admin/index/index.html [运行时间：0.056517s][吞吐率：17.69req/s] [内存消耗：3,384.73kb] [文件加载：77]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.007138s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a8770ca50000192e8f9a3200000001',
+  'cookie' => '__cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi; thinkphp_show_page_trace=0|0; cf_ob_info=522:5920f348bf51192e:HKG; cf_use_ob=443; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'referer' => 'https://supersign.makemeng.com/admin/public/login.html',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'cf-ray' => '5920f45aaa3c192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000328s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000446s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ /www/wwwroot/supersign.makemeng.com/app/admin/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/index/index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000372s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.001110s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003461s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 6  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 71  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 7  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 20  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 75  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 93  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 164  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 109  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 49  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 50  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 110  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 152  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 153  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 156  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 171  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 1  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 2  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 42  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 120  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 121  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 131  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 139  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 145  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 162  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 163  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 167  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 169  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 170  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 165  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 166  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 168  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 174  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 175  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 172  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 173  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000250s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:11:53+08:00 ] 172.17.38.233 172.68.255.10 GET /admin/main/index.html
+[ info ] supersign.makemeng.com/admin/main/index.html [运行时间：0.050114s][吞吐率：19.95req/s] [内存消耗：3,058.84kb] [文件加载：73]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.007218s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a8771d320000192e8fafc200000001',
+  'cookie' => '__cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi; thinkphp_show_page_trace=0|0; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'referer' => 'https://supersign.makemeng.com/admin/index/index.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'cf-ray' => '5920f4751d42192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000274s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000451s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MainController->index[ /www/wwwroot/supersign.makemeng.com/app/admin/controller/MainController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/main/index.html [ array (
+  0 => 'admin',
+  1 => 'new',
+  2 => 'charge',
+  3 => 'user',
+  4 => 'fent',
+  5 => 'fendow',
+  6 => 'fent_day',
+  7 => 'fendow_day',
+  8 => 'week',
+  9 => 'fendow_week',
+  10 => 'super',
+  11 => 'superdow',
+  12 => 'super_day',
+  13 => 'superdow_day',
+  14 => 'coin_week',
+  15 => 'user_week',
+  16 => 'superdow_week',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000398s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_posted_log` [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` LIMIT 1 [ RunTime:0.002017s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` WHERE  (  creattime >1589212800 ) LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_charge_log` [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT SUM(download_coin) AS tp_sum FROM `cmf_charge_log` WHERE  (  status = 1 ) LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT SUM(download_coin) AS tp_sum FROM `cmf_charge_log` WHERE  (  status = 1 && addtime >1589212800 ) LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT SUM(download_coin) AS tp_sum FROM `cmf_charge_log` WHERE  (  status = 1 and goods_type=1 ) LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT SUM(download_coin) AS tp_sum FROM `cmf_charge_log` WHERE  (  status = 1 and goods_type=2 ) LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user` LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user` WHERE  (  create_time >1589212800 ) LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_posted` [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted` LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted` WHERE  (  addtime >1589212800 ) LIMIT 1 [ RunTime:0.001549s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_charge_log` ORDER BY status = 1 && addtime desc LIMIT 8 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  (  user_type=2 ) ORDER BY create_time desc LIMIT 8 [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted` WHERE  `is_open_super_sign` = 0 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  `p`.`is_open_super_sign` = 0 LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted` WHERE  (  is_open_super_sign = 0 and addtime >=1589212800 ) LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 0 and l.creattime >=1589212800 ) LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 0 and l.creattime >=1588694400 ) LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 0 and l.creattime >=1588780800 ) LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 0 and l.creattime >=1588867200 ) LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 0 and l.creattime >=1588953600 ) LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 0 and l.creattime >=1589040000 ) LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 0 and l.creattime >=1589126400 ) LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 0 and l.creattime >=1589212800 ) LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted` WHERE  `is_open_super_sign` = 1 LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  `p`.`is_open_super_sign` = 1 LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted` WHERE  (  is_open_super_sign = 1 and addtime >=1589212800 ) LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 1 and l.creattime >=1589212800 ) LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 1 and l.creattime >=1588694400 ) LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 1 and l.creattime >=1588780800 ) LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 1 and l.creattime >=1588867200 ) LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 1 and l.creattime >=1588953600 ) LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 1 and l.creattime >=1589040000 ) LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 1 and l.creattime >=1589126400 ) LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `l` INNER JOIN `cmf_user_posted` `p` ON `p`.`id`=`l`.`posted_id` WHERE  (  p.is_open_super_sign = 1 and l.creattime >=1589212800 ) LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT SUM(download_coin) AS tp_sum FROM `cmf_charge_log` WHERE  (  status = 1 && addtime >1588694400 ) LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT SUM(download_coin) AS tp_sum FROM `cmf_charge_log` WHERE  (  status = 1 && addtime >1588780800 ) LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT SUM(download_coin) AS tp_sum FROM `cmf_charge_log` WHERE  (  status = 1 && addtime >1588867200 ) LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT SUM(download_coin) AS tp_sum FROM `cmf_charge_log` WHERE  (  status = 1 && addtime >1588953600 ) LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT SUM(download_coin) AS tp_sum FROM `cmf_charge_log` WHERE  (  status = 1 && addtime >1589040000 ) LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT SUM(download_coin) AS tp_sum FROM `cmf_charge_log` WHERE  (  status = 1 && addtime >1589126400 ) LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT SUM(download_coin) AS tp_sum FROM `cmf_charge_log` WHERE  (  status = 1 && addtime >1589212800 ) LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user` WHERE  (  create_time >1588694400 ) LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user` WHERE  (  create_time >1588780800 ) LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user` WHERE  (  create_time >1588867200 ) LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user` WHERE  (  create_time >1588953600 ) LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user` WHERE  (  create_time >1589040000 ) LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user` WHERE  (  create_time >1589126400 ) LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user` WHERE  (  create_time >1589212800 ) LIMIT 1 [ RunTime:0.000120s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:12:00+08:00 ] 172.17.38.233 172.68.255.10 GET /Admin/members/index.html
+[ info ] supersign.makemeng.com/Admin/members/index.html [运行时间：0.050872s][吞吐率：19.66req/s] [内存消耗：3,082.91kb] [文件加载：76]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.010472s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'members',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a87738fc0000192e8f925200000001',
+  'cookie' => '__cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi; thinkphp_show_page_trace=0|0; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'referer' => 'https://supersign.makemeng.com/admin/index/index.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'cf-ray' => '5920f4a199ef192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000392s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000767s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MembersController->index[ /www/wwwroot/supersign.makemeng.com/app/admin/controller/MembersController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/members/index.html [ array (
+  0 => 'admin',
+  1 => 'user',
+  2 => 'members',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000507s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.001478s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001253s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user` WHERE  (  user_type=2 ) LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  (  user_type=2 ) LIMIT 0,10 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_posted_log` [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted_log` `a` INNER JOIN `cmf_user_posted` `b` ON `b`.`id`=`a`.`posted_id` WHERE  (  b.uid=2 ) LIMIT 1 [ RunTime:0.000279s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:12:15+08:00 ] 172.17.38.233 172.68.255.10 GET /Admin/app/index.html
+[ info ] supersign.makemeng.com/Admin/app/index.html [运行时间：0.033125s][吞吐率：30.19req/s] [内存消耗：3,200.46kb] [文件加载：76]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.006922s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'app',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cdn-loop' => 'cloudflare',
+  'cf-connecting-ip' => '103.113.62.40',
+  'cf-request-id' => '02a877730d0000192e8fb60200000001',
+  'cookie' => '__cfduid=d90417266729ee40401c8501e6c1cae7e1589253015; PHPSESSID=p9mh6ke5n0upht3b8a9hct61pi; thinkphp_show_page_trace=0|0; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'referer' => 'https://supersign.makemeng.com/admin/index/index.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cf-visitor' => '{"scheme":"https"}',
+  'x-forwarded-proto' => 'https',
+  'cf-ray' => '5920f4fe7d1b192e-HKG',
+  'x-forwarded-for' => '103.113.62.40',
+  'cf-ipcountry' => 'PH',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'supersign.makemeng.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000237s ]
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /www/wwwroot/supersign.makemeng.com/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000443s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\AppController->index[ /www/wwwroot/supersign.makemeng.com/app/admin/controller/AppController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/app/index.html [ array (
+  0 => 'admin',
+  1 => 'page',
+  2 => 'app',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:dbname=isign-php;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.001015s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_posted` [ RunTime:0.001109s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user_posted` WHERE  `way` = 0 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_posted` WHERE  `way` = 0 ORDER BY id DESC LIMIT 0,20 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 2 [ RunTime:0.000210s ]
